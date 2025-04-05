@@ -1,6 +1,7 @@
 # EXS2AL
 
 A Python utility for renaming audio sample files created by Apple Autosampler EXS format so they can be imported into IOS AudioLayer sampler.
+Note: when you configure Autosampler it might be better to choose only white key root notes, I noticed some errors when importing file names that have a sharp (#) sign.
 
 ## File Naming Conventions
 
