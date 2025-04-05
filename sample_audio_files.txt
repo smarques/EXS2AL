@@ -1,0 +1,48 @@
+# Sample Audio Files for Testing
+# You can use these filenames for testing the audio_file_renamer.py script
+#
+# Format: {soundname}-{starting pitch}-V{velocity}-{4 letters code}.{extension}
+
+# Piano sample set (from C1 to G6, with increasing velocity)
+Piano-C1-V32-ABCD.wav
+Piano-C2-V32-ABCD.wav 
+Piano-C3-V64-ABCD.wav
+Piano-C4-V96-ABCD.wav
+Piano-C5-V110-ABCD.wav
+Piano-G6-V127-ABCD.wav
+
+# Violin sample set (with sharps, test different velocities)
+Violin-A3-V10-DEFG.wav
+Violin-A#3-V42-DEFG.wav
+Violin-B3-V85-DEFG.wav
+Violin-C4-V127-DEFG.wav
+Violin-C#4-V110-DEFG.wav
+Violin-D4-V90-DEFG.wav
+
+# Drum kit samples (to test isolated samples)
+Kick Drum-C1-V80-DRUM.wav
+Snare-D1-V90-DRUM.wav
+Hi-Hat-F#1-V70-DRUM.wav
+Crash Cymbal-A2-V100-DRUM.wav
+
+# Sample with complex name and spaces
+Uomini Di Abissi - grattuggia-C1-V42-3GUZ.wav
+Uomini Di Abissi - grattuggia-D1-V84-3GUZ.wav
+Uomini Di Abissi - grattuggia-E1-V127-3GUZ.wav
+
+# Expected Output Example:
+# Piano_p_C1.wav
+# Piano_p_C2.wav
+# Piano_mf_C3.wav
+# Piano_f_C4.wav
+# Piano_ff_C5.wav
+# Piano_fff_G6.wav
+
+# Instructions for Creating Test Files:
+# 1. Create an empty directory for testing
+# 2. Use the following commands to create empty audio files with these names:
+#    For Linux/Mac:
+#    $ touch "Piano-C1-V32-ABCD.wav"
+#    
+#    For Windows (PowerShell):
+#    > New-Item -ItemType File -Name "Piano-C1-V32-ABCD.wav" 

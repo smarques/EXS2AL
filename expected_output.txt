@@ -1,0 +1,65 @@
+# Expected Output After Running audio_file_renamer.py
+# This file shows the expected renaming results for the test files
+
+# Original Piano Files:
+# Piano-C1-V32-ABCD.wav
+# Piano-C2-V32-ABCD.wav
+# Piano-C3-V64-ABCD.wav  # Note that this has V64, not V32
+# Piano-C4-V96-ABCD.wav
+# Piano-C5-V110-ABCD.wav
+# Piano-G6-V127-ABCD.wav
+
+# Expected Piano Files After Renaming:
+Piano_p_C1.wav    # V32 maps to "p"
+Piano_p_C2.wav    # V32 maps to "p" 
+Piano_mf_C3.wav   # V64 maps to "mf"
+Piano_f_C4.wav    # V96 maps to "f"
+Piano_ff_C5.wav   # V110 maps to "ff"
+Piano_fff_G6.wav  # V127 maps to "fff"
+
+# Original Violin Files:
+# Violin-A3-V10-DEFG.wav
+# Violin-A#3-V42-DEFG.wav
+# Violin-B3-V85-DEFG.wav
+# Violin-C4-V127-DEFG.wav
+# Violin-C#4-V110-DEFG.wav
+# Violin-D4-V90-DEFG.wav
+
+# Expected Violin Files After Renaming:
+Violin_ppp_A3.wav  # V10 maps to "ppp"
+Violin_p_A#3.wav   # V42 maps to "p"
+Violin_f_B3.wav    # V85 maps to "f"
+Violin_fff_C4.wav  # V127 maps to "fff"
+Violin_ff_C#4.wav  # V110 maps to "ff"
+Violin_f_D4.wav    # V90 maps to "f"
+
+# Original Drum Kit Files:
+# Kick Drum-C1-V80-DRUM.wav
+# Snare-D1-V90-DRUM.wav
+# Hi-Hat-F#1-V70-DRUM.wav
+# Crash Cymbal-A2-V100-DRUM.wav
+
+# Expected Drum Kit Files After Renaming (spaces removed from names):
+KickDrum_f_C1.wav     # V80 maps to "f"
+Snare_f_D1.wav        # V90 maps to "f"
+Hi-Hat_mf_F#1.wav     # V70 maps to "mf"
+CrashCymbal_ff_A2.wav # V100 maps to "ff"
+
+# Original Complex Name Files:
+# Uomini Di Abissi - grattuggia-C1-V42-3GUZ.wav
+# Uomini Di Abissi - grattuggia-D1-V84-3GUZ.wav
+# Uomini Di Abissi - grattuggia-E1-V127-3GUZ.wav
+
+# Expected Complex Name Files After Renaming (spaces removed):
+UominiDiAbissi-grattuggia_p_C1.wav    # V42 maps to "p"
+UominiDiAbissi-grattuggia_f_D1.wav    # V84 maps to "f"
+UominiDiAbissi-grattuggia_fff_E1.wav  # V127 maps to "fff"
+
+# Velocity Mapping Reference (0-127 MIDI velocity range):
+# ppp: 0-18
+# pp:  19-36
+# p:   37-54
+# mf:  55-72
+# f:   73-90
+# ff:  91-108
+# fff: 109-127 
